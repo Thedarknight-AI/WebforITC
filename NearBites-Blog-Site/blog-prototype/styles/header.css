@@ -1,0 +1,55 @@
+/* Site header and navigation */
+
+.site-header {
+  width: calc(100% - 96px);
+  height: 88px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -1.6px;
+}
+
+.wordmark span { color: var(--orange); }
+
+.wordmark i {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.main-nav { display: flex; gap: 38px; }
+
+.main-nav a, .header-cta {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-nav a {
+  color: var(--muted);
+  transition: color 160ms ease;
+}
+
+.main-nav a:hover, .main-nav a.active { color: var(--ink); }
+
+.header-cta {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.header-cta:hover { background: white; border-color: var(--ink); }
+.header-cta span { padding-left: 9px; color: var(--orange); }
