@@ -1,5 +1,6 @@
 // Load the requested story and fill the article page with its content.
 (() => {
+  // The card link passes a story slug so the correct record can be found here.
   const params = new URLSearchParams(window.location.search);
   const story = window.NearBitesJournal.stories.find((item) => item.slug === params.get("story"));
   const main = document.querySelector("[data-story-body]");
@@ -25,6 +26,7 @@
   document.querySelector("[data-story-location]").textContent = story.location;
   const locationLink = document.querySelector("[data-story-location-link]");
   if (story.locationUrl) {
+    // Only allow web links before exposing the map link in the page.
     const url = new URL(story.locationUrl);
     if (url.protocol !== "http:" && url.protocol !== "https:") {
       throw new TypeError("Story location links must use http or https.");
@@ -38,6 +40,7 @@
   window.initPhotoGallery(document.querySelector("[data-story-gallery]"), story.images);
 
   story.body.forEach((paragraph) => {
+    // Insert copy as text rather than HTML so article content stays plain text.
     const element = document.createElement("p");
     element.textContent = paragraph;
     main.append(element);

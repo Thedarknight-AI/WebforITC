@@ -19,6 +19,7 @@
 .back-link span { color: var(--orange); }
 
 .story-header {
+  /* Center the article introduction while the cover and body can use wider space. */
   max-width: none;
   margin: clamp(24px, 4vw, 48px) auto clamp(22px, 3vw, 36px);
   text-align: center;
@@ -58,6 +59,7 @@
 
 .story-cover { margin: 0; }
 .story-gallery {
+  /* A square, clipped frame keeps gallery images consistent as they change. */
   width: min(100%, 780px);
   aspect-ratio: 1;
   height: auto;
@@ -80,6 +82,7 @@
 }
 
 .story-body {
+  /* Article copy spans the available content width and uses fluid vertical spacing. */
   width: 100%;
   margin: clamp(28px, 5vw, 56px) 0;
 }

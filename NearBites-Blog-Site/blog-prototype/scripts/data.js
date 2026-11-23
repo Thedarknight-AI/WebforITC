@@ -1,6 +1,8 @@
 // Shared story content for the homepage cards and article pages.
 // Budget values are sample per-person estimates for the budget filter.
 window.NearBitesJournal = {
+  // Each record powers both the homepage card and the matching article page.
+  // Keep the first gallery image identical to image so the cover matches the article.
   stories: [
     {
       slug: "Cafeteria",

@@ -15,6 +15,7 @@
   --sans: "DM Sans", "Segoe UI", sans-serif;
 }
 
+/* Include padding and borders in every declared width to keep layouts predictable. */
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -37,6 +38,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 
 .skip-link, .visually-hidden {
+  /* Keep assistive content available without taking up visible layout space. */
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,6 +1,7 @@
 /* Site header and navigation */
 
 .site-header {
+  /* Flexbox keeps the brand, navigation, and call-to-action aligned in one row. */
   width: calc(100% - 96px);
   height: 88px;
   margin: 0 auto;

@@ -82,6 +82,7 @@
 }
 
 .featured {
+  /* The photo and story copy share the row; responsive.css stacks them on phones. */
   width: calc(100% - 96px);
   min-height: 494px;
   margin: 0 auto;
@@ -97,6 +98,7 @@
 }
 
 .featured-gallery {
+  /* Clip the zoomed photo and position its overlay controls within the frame. */
   height: 390px;
   overflow: hidden;
   background: var(--paper-deep);
@@ -120,6 +122,7 @@
 .featured-image-link:hover img, .story-card-image:hover img { transform: scale(1.035); }
 
 .image-note {
+  /* Float the editorial label over the featured photo without affecting its size. */
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -263,6 +266,7 @@
 }
 
 .story-tools {
+  /* Search and budget controls share the row on wide screens. */
   min-height: 53px;
   display: flex;
   align-items: center;
@@ -368,6 +372,7 @@
 }
 
 .story-grid {
+  /* minmax(0, 1fr) allows long story titles to wrap instead of widening a column. */
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;

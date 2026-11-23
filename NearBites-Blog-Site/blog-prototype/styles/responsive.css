@@ -5,6 +5,7 @@
 }
 
 @media (max-width: 900px) {
+  /* Tighten gutters and card spacing before the layout reaches phone size. */
   .site-header, .intro, .featured, .manifesto { width: calc(100% - 48px); }
   .contact-section { width: calc(100% - 48px); gap: 36px; }
   .story-detail { width: calc(100% - 48px); }
@@ -26,6 +27,7 @@
 }
 
 @media (max-width: 640px) {
+  /* Stack dense desktop sections so navigation, filters, and cards fit narrow screens. */
   .site-header {
     width: calc(100% - 36px);
     height: auto;
@@ -52,6 +54,7 @@
 
   .featured-gallery { height: min(70vw, 340px); }
   .featured-image-link .image-note {
+    /* Move the label away from the bottom-left controls on small featured images. */
     top: 12px;
     right: 12px;
     bottom: auto;
@@ -144,6 +147,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* Respect the user's OS accessibility setting by minimizing decorative motion. */
   *, *::before, *::after {
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;

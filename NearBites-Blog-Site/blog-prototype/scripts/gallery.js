@@ -18,12 +18,14 @@ window.initPhotoGallery = (gallery, photos) => {
   };
 
   previous.addEventListener("click", () => {
+    // Stop at the first photo instead of wrapping to the end of the gallery.
     if (currentIndex > 0) {
       currentIndex -= 1;
       update();
     }
   });
   next.addEventListener("click", () => {
+    // Stop at the last photo instead of wrapping back to the beginning.
     if (currentIndex < photos.length - 1) {
       currentIndex += 1;
       update();

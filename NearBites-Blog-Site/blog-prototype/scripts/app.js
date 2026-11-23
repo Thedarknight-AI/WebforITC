@@ -19,6 +19,7 @@
   const suggestionForm = document.querySelector("[data-suggestion-form]");
   const suggestionStatus = document.querySelector("[data-suggestion-status]");
   const featuredStory = stories[0];
+  // Cards are rebuilt from filtered results, with at most this many per page.
   const pageSize = 6;
   let currentPage = 1;
 
@@ -27,6 +28,7 @@
     const article = document.createElement("article");
     article.className = "story-card";
     const storyUrl = `article.html?story=${encodeURIComponent(story.slug)}`;
+    // Use the category when no specific title is provided in the story data.
     const storyTitle = story.title || story.category;
     article.innerHTML = `
       <a class="story-card-image" href="${storyUrl}" tabindex="-1" aria-hidden="true">
@@ -44,6 +46,7 @@
   };
 
   const resetFilters = () => {
+    // Restore the controls to their HTML defaults before refreshing the results.
     search.value = "";
     minimumBudget.value = minimumBudget.defaultValue;
     maximumBudget.value = maximumBudget.defaultValue;
@@ -59,6 +62,7 @@
     const budgetRangeIsValid = minBudget <= maxBudget;
     budgetError.hidden = budgetRangeIsValid;
     if (!budgetRangeIsValid) {
+      // Do not show misleading results while the selected budget range is invalid.
       count.textContent = "";
       grid.hidden = true;
       emptyState.hidden = true;
@@ -67,6 +71,7 @@
       return;
     }
 
+    // Apply text and price filters first, then slice the matches for the current page.
     const matchingStories = stories.filter((story) => {
       const searchableText = [story.title || story.category, story.summary, story.category, story.location].join(" ").toLocaleLowerCase();
       return searchableText.includes(query) && story.budget >= minBudget && story.budget <= maxBudget;
@@ -101,6 +106,7 @@
     }));
   };
 
+  // A changed filter should show results from the beginning, not an old page index.
   const refreshFromFirstPage = () => { currentPage = 1; render(); };
 
   // Use the first story for the featured area and its photo gallery.
