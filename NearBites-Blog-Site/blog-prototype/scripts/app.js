@@ -27,6 +27,7 @@
     const article = document.createElement("article");
     article.className = "story-card";
     const storyUrl = `article.html?story=${encodeURIComponent(story.slug)}`;
+    const storyTitle = story.title || story.category;
     article.innerHTML = `
       <a class="story-card-image" href="${storyUrl}" tabindex="-1" aria-hidden="true">
         <img src="${story.image}" alt="" loading="lazy">
@@ -34,7 +35,7 @@
       </a>
       <div class="story-card-copy">
         <p class="eyebrow"><span>${story.category}</span><span class="eyebrow-divider">/</span><span>${story.location}</span></p>
-        <h3><a href="${storyUrl}">${story.title}</a></h3>
+        <h3><a href="${storyUrl}">${storyTitle}</a></h3>
         <p class="story-card-budget">Est. ₱${story.budget} per person <span>(sample)</span></p>
         <p class="story-card-summary">${story.summary}</p>
         <a class="card-read-link" href="${storyUrl}">Read the story <span aria-hidden="true">↗</span></a>
@@ -67,7 +68,7 @@
     }
 
     const matchingStories = stories.filter((story) => {
-      const searchableText = [story.title, story.summary, story.category, story.location].join(" ").toLocaleLowerCase();
+      const searchableText = [story.title || story.category, story.summary, story.category, story.location].join(" ").toLocaleLowerCase();
       return searchableText.includes(query) && story.budget >= minBudget && story.budget <= maxBudget;
     });
     const pageCount = Math.ceil(matchingStories.length / pageSize);

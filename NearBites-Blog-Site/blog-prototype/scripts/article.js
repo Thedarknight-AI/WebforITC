@@ -19,7 +19,8 @@
   }
 
   // Populate the article details, photo gallery, and story paragraphs.
-  document.title = `${story.title} — NearBites Journal`;
+  const storyTitle = story.title || story.category;
+  document.title = `${storyTitle} — NearBites Journal`;
   document.querySelector("[data-story-category]").textContent = story.category;
   document.querySelector("[data-story-location]").textContent = story.location;
   const locationLink = document.querySelector("[data-story-location-link]");
@@ -31,7 +32,7 @@
     locationLink.href = url.href;
     locationLink.hidden = false;
   }
-  document.querySelector("[data-story-title]").textContent = story.title;
+  document.querySelector("[data-story-title]").textContent = storyTitle;
   document.querySelector("[data-story-summary]").textContent = story.summary;
   document.querySelector("[data-story-budget]").textContent = `Estimated budget: ₱${story.budget} per person (sample estimate)`;
   window.initPhotoGallery(document.querySelector("[data-story-gallery]"), story.images);

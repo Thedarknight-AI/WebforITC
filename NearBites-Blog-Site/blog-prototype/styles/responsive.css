@@ -51,6 +51,15 @@
   }
 
   .featured-gallery { height: min(70vw, 340px); }
+  .featured-image-link .image-note {
+    top: 12px;
+    right: 12px;
+    bottom: auto;
+    max-width: calc(100% - 24px);
+    padding: 8px 10px;
+    font-size: .75rem;
+    overflow-wrap: anywhere;
+  }
   .featured-copy { min-height: 280px; padding-top: 9px; }
   .featured-copy h2 { max-width: 420px; font-size: 41px; }
   .featured-summary { max-width: 280px; }

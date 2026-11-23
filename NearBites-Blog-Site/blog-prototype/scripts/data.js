@@ -4,18 +4,18 @@ window.NearBitesJournal = {
   stories: [
     {
       slug: "Cafeteria",
+      title: "Mise En Place Cafeteria",
       category: "Mise En Place",
       location: " E 9th St, Olongapo City",
       locationUrl: "https://maps.app.goo.gl/LbmaTiXj9urZmekc7",
       summary: "Cafeteria wherein home cooked meals are served.",
-      budget: 180,
-      image: "assets/article-bakery.png",
+      budget: 75,
+      image: "assets/asset4.jpg",
       images: [
-        { src: "assets/article-bakery.png", alt: "Croissants and coffee served in a neighborhood café" },
-        
+        { src: "assets/asset4.jpg", alt: "Mise En Place cafeteria storefront" }
       ],
       body: [
-        "A cafeteria wherein home cooked meals are served to the people and affordable meals can be bought."
+        "The Mise En Place Cafeteria sign hangs above a simple, open-front storefront, its wide awning offering a little shade from the bright Olongapo sun. It feels like the kind of neighborhood stop where the welcome is practical and the meal is the main event. the student-meal estimate is ₱75."
       ]
     },
     {
@@ -24,94 +24,89 @@ window.NearBitesJournal = {
       location: "E 9th St, Olongapo City",
       locationUrl: "https://maps.app.goo.gl/wD4RyGXfnERpqC4v5",
       summary: "Afforedable Korean food at your hand.",
-      budget: 280,
-      image: "assets/article-pizza.png",
+      budget: 75,
+      image: "assets/asset3.jpg",
       images: [
-        { src: "assets/article-pizza.png", alt: "Wood-fired pizza topped with basil" },
-        { src: "assets/pizza.png", alt: "A freshly baked pizza ready to share" }
+        { src: "assets/asset3.jpg", alt: "Korean food cart on a neighborhood street" }
       ],
       body: [
-        "Affordable Korean food Near campus ground."
+        "A bold red KOREAN FOOD sign makes this compact street cart easy to spot, while its open counter and leafy, sunlit surroundings give it a relaxed neighborhood feel. so ask at the cart for the current menu; the estimate uses a 35 student meal."
       ]
     },
     {
-      slug: "Cafeteria/Carenderia",
-      category: "Mario's Kitchenette - Canteen",
+      slug: "Food Stall",
+      category: "Food Stall",
       location: "E 9th St, Olongapo City",
-      locationUrl: "",
+      locationUrl: "https://www.google.com/maps/search/?api=1&query=E%209th%20St%2C%20Olongapo%20City",
       summary: "Cafeteria near campus ground",
-      budget: 220,
-      image: "assets/article-local.png",
+      budget: 35,
+      image: "assets/asset1.jpg",
       images: [
-        { src: "assets/article-local.png", alt: "A Filipino-style meal served with rice and vegetables" },
-        { src: "assets/trending-rice.png", alt: "A comforting rice meal served in a bowl" }
+        { src: "assets/asset1.jpg", alt: "Siomai and snacks at a local food stall" },
       ],
       body: [
-        "Recommended place for students to buy their food they give free Vegetable."
+        "Colorful menu boards make this stall's choices easy to scan, from siomai and quick snacks to rice meals. Siomai rice is listed at ₱35, the lowest full meal price visible, with sisig, shawarma, fried chicken, and barbecue rice also on the board. It is an inviting pick when you want a filling lunch without stretching a student budget."
       ]
     },
     {
-      slug: "Cafeteria/Carenderia",
-      category: "Mario's Kitchenette - Canteen",
+      slug: "chao-fan-gapo",
+      title: "Chao Fan Gapo",
+      category: "Chao Fan Gapo",
       location: "E 9th St, Olongapo City",
-      locationUrl: "",
+      locationUrl: "https://www.google.com/maps/search/?api=1&query=Chao%20Fan%20Gapo%2C%20E%209th%20St%2C%20Olongapo%20City",
       summary: "Cafeteria near campus ground",
-      budget: 220,
-      image: "assets/article-local.png",
+      budget: 35,
+      image: "assets/asset2.jpg",
       images: [
-        { src: "assets/article-local.png", alt: "A Filipino-style meal served with rice and vegetables" },
-        { src: "assets/trending-rice.png", alt: "A comforting rice meal served in a bowl" }
+        { src: "assets/asset2.jpg", alt: "Chao Fan Gapo food stall" },
       ],
       body: [
-        "Recommended place for students to buy their food they give free Vegetable."
+        "The bright CHAO FAN GAPO sign sets the tone at this small street-side counter. Its board advertises chao fan for ₱35, alongside siomai, egg, hot dog, sausage, and sisig options. For the lowest-priced full meal shown, the chao fan is the clear student-friendly choice."
       ]
     },
     {
-      slug: "Cafeteria/Carenderia",
-      category: "Mario's Kitchenette - Canteen",
+      slug: "Food Stall",
+      category: "Food Stall",
       location: "E 9th St, Olongapo City",
-      locationUrl: "",
+      locationUrl: "https://www.google.com/maps/search/?api=1&query=Mario%27s%20Kitchenette%2C%20E%209th%20St%2C%20Olongapo%20City",
       summary: "Cafeteria near campus ground",
-      budget: 220,
-      image: "assets/article-local.png",
+      budget: 75,
+      image: "assets/asset5.jpg",
       images: [
-        { src: "assets/article-local.png", alt: "A Filipino-style meal served with rice and vegetables" },
-        { src: "assets/trending-rice.png", alt: "A comforting rice meal served in a bowl" }
+        { src: "assets/asset5.jpg", alt: "Campus-side food stall with customers" }
       ],
       body: [
-        "Recommended place for students to buy their food they give free Vegetable."
+        "Set beside a campus walkway, this green-sided food stall has a broad service counter and students stopping by to order. The photo captures the everyday rhythm of a quick canteen visit rather than a polished dining room. No readable business name or menu prices appear, so the estimated student meal is ₱75."
       ]
     },
     {
-      slug: "Cafeteria/Carenderia",
+      slug: "marios-kitchenette-4",
       category: "Mario's Kitchenette - Canteen",
       location: "E 9th St, Olongapo City",
-      locationUrl: "",
-      summary: "Cafeteria near campus ground",
-      budget: 220,
-      image: "assets/article-local.png",
+      locationUrl: "https://www.google.com/maps/search/?api=1&query=Mario%27s%20Kitchenette%2C%20E%209th%20St%2C%20Olongapo%20City",
+      summary: "A self-service canteen near campus.",
+      budget: 75,
+      image: "assets/asset6.jpg",
       images: [
-        { src: "assets/article-local.png", alt: "A Filipino-style meal served with rice and vegetables" },
-        { src: "assets/trending-rice.png", alt: "A comforting rice meal served in a bowl" }
+        { src: "assets/asset6.jpg", alt: "Self-service canteen storefront and counter" }
       ],
       body: [
-        "Recommended place for students to buy their food they give free Vegetable."
+        "Mario's canteen opens onto the street with a clear 'PAY AS YOU ORDER'.  ₱75 as the student-meal estimate and check at the counter for current options."
       ]
     },
     {
-      slug: "Cafeteria/Carenderia",
+      slug: "marios-kitchenette-4",
       category: "Mario's Kitchenette - Canteen",
       location: "E 9th St, Olongapo City",
-      locationUrl: "",
-      summary: "Cafeteria near campus ground",
-      budget: 220,
-      image: "assets/article-local.png",
+      locationUrl: "https://www.google.com/maps/search/?api=1&query=Mario%27s%20Kitchenette%2C%20E%209th%20St%2C%20Olongapo%20City",
+      summary: "A self-service canteen near campus.",
+      budget: 75,
+      image: "assets/asset6.jpg",
       images: [
-        { src: "assets/article-local.png", alt: "A Filipino-style meal served with rice and vegetables" },
-        { src: "assets/trending-rice.png", alt: "A comforting rice meal served in a bowl" }
+        { src: "assets/asset6.jpg", alt: "Self-service canteen storefront and counter" }
       ],
       body: [
-        "Recommended place for students to buy their food they give free Vegetable."
+        "Mario's canteen opens onto the street with a clear 'PAY AS YOU ORDER'.  ₱75 as the student-meal estimate and check at the counter for current options."
       ]
     },
   ]
